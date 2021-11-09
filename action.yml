@@ -1,0 +1,19 @@
+name: 'TestBlazeAction'
+description: 'Run Blazemeter Test from GitHub Action'
+inputs:
+  name:
+    description: 'Name'
+    required: true
+    default: 'herry poter'
+  mobileno:
+    description: 'Mobile No'
+    required: true
+    default: '7788554477'
+  age:
+    description: 'Age'
+    required: true
+    default: '0'
+    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
